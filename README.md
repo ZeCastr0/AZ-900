@@ -1,5 +1,5 @@
 # laboratorio-dio
-Repositório para realizar atividades educacionais da DIO
+Repositório para realizar atividades educacionais da DIO referente a AZ-900
 
 ---
 
