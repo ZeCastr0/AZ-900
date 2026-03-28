@@ -149,6 +149,7 @@ A arquitetura do Microsoft Azure é baseada em uma estrutura global distribuída
 As regiões são conjuntos de datacenters localizados em diferentes áreas geográficas ao redor do mundo. Cada região é projetada para oferecer alta disponibilidade e redundância.
 
 **Exemplo:** Brasil Sul, East US, West Europe  
+![Regioes](image-2.png)
 
 ➡️ Permitem escolher onde os dados e aplicações serão hospedados  
 
@@ -160,6 +161,8 @@ As zonas de disponibilidade são datacenters fisicamente separados dentro de uma
 
 ➡️ Garantem alta disponibilidade e tolerância a falhas  
 ➡️ Se uma zona falhar, outra continua operando  
+
+![Zonas](image-3.png)
 
 ---
 
