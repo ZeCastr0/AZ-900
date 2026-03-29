@@ -155,6 +155,19 @@ As regiões são conjuntos de datacenters localizados em diferentes áreas geogr
 
 ---
 
+🌐 Pares de Regiões (Region Pairs)
+
+O Azure organiza as regiões em pares, chamados de "Region Pairs". Cada região possui uma região secundária associada dentro da mesma geografia.
+
+➡️ Em caso de falha na região principal, a região pareada pode ser utilizada como recuperação  
+➡️ Atualizações planejadas são distribuídas entre as regiões do par para evitar indisponibilidade simultânea  
+➡️ Auxilia em estratégias de disaster recovery (recuperação de desastre)  
+
+Exemplo:  
+Brasil Sul → South Central US (região pareada)
+
+---
+
 ### 🏢 Zonas de Disponibilidade
 
 As zonas de disponibilidade são datacenters fisicamente separados dentro de uma mesma região. Cada zona possui energia, rede e refrigeração independentes.
@@ -166,6 +179,41 @@ As zonas de disponibilidade são datacenters fisicamente separados dentro de uma
 
 ---
 
+
+🛠️ Gerenciamento de Recursos no Azure
+
+O Azure oferece uma estrutura organizada para criação, gerenciamento e controle dos recursos através de diferentes níveis.
+
+➡️ Facilita a organização, controle de acesso e governança dos recursos na nuvem  
+
+**Hierarquia de Gerenciamento:**
+
+Management Groups (Grupos de Gerenciamento)  
+➡️ Utilizados para organizar múltiplas assinaturas  
+➡️ Permitem aplicar políticas e controle de acesso em larga escala  
+
+Subscriptions (Assinaturas)  
+➡️ Unidade de cobrança e controle de acesso  
+➡️ Contém grupos de recursos  
+
+Resource Groups (Grupos de Recursos)  
+➡️ Container lógico para agrupar recursos relacionados  
+➡️ Permite gerenciar recursos como um conjunto  
+
+Resources (Recursos)  
+➡️ Elementos individuais, como máquinas virtuais, bancos de dados, storage, etc.  
+
+---
+
+📌 Resumo da Hierarquia
+
+Management Group → Assinatura → Grupo de Recursos → Recursos  
+
+➡️ Cada nível herda permissões e políticas do nível superior  
+
+![Hierarquia](image-4.png)
+
+
 ### 📦 Assinaturas
 
 A assinatura é uma unidade de gerenciamento no Azure que organiza e controla o uso dos recursos.
@@ -173,6 +221,8 @@ A assinatura é uma unidade de gerenciamento no Azure que organiza e controla o 
 ➡️ Define limites de cobrança (billing)  
 ➡️ Controla acesso e permissões  
 ➡️ Permite separar ambientes (ex: dev, teste, produção)  
+
+![Assinaturas](image-5.png)
 
 ---
 
