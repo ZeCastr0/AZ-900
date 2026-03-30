@@ -399,7 +399,13 @@ Plataforma totalmente gerenciada para criar, implantar e dimensionar rapidamente
 - Functions → execução por evento  
 
 ---
-**🌐 Rede Virtual (Azure Virtual Network – VNet)**
+
+## 🌐 Rede
+
+---
+
+---
+** Rede Virtual (Azure Virtual Network – VNet)**
 
 A VNet é o serviço de rede do Azure que permite criar uma rede privada na nuvem, semelhante a uma rede local (on-premises).
 
