@@ -234,7 +234,7 @@ Management Groups → Subscriptions → Resource Groups → Resources
 
 ---
 
-## 💻 Computação e Rede no Azure
+### 💻 Computação e Rede no Azure
 
 A computação no Azure é um serviço sob demanda que fornece recursos de computação, como discos, processadores, memória, rede e sistemas operacionais.
 
@@ -242,7 +242,7 @@ A computação no Azure é um serviço sob demanda que fornece recursos de compu
 
 ---
 
-## 🖥️ Serviços de Computação
+#### 🖥️ Serviços de Computação ####
 
 ---
 
@@ -400,7 +400,7 @@ Plataforma totalmente gerenciada para criar, implantar e dimensionar rapidamente
 
 ---
 
-## 🌐 Rede
+#### 🌐 Rede
 
 ---
 ** Rede Virtual (Azure Virtual Network – VNet)**
@@ -438,7 +438,7 @@ Exemplos de uso:
 - Integrar com rede local da empresa    
 
 ---
-### 🔐 VPN Gateway
+**🔐 VPN Gateway**
 
 O VPN Gateway é um serviço do Azure que permite criar conexões seguras entre a rede do Azure (VNet) e redes externas, como a rede local da empresa ou dispositivos remotos.
 
