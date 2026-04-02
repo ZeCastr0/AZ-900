@@ -1,6 +1,4 @@
-# laboratorio-dio
-Repositório para realizar atividades educacionais da DIO referente a AZ-900
-
+# Resumo para preparação para a AZ-900
 ---
 
 📘 AZ-900 – Fundamentos de Cloud (Microsoft Azure)
