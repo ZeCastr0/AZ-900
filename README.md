@@ -557,24 +557,20 @@ O Azure replica seus dados automaticamente para garantir alta disponibilidade.
 
 Tipos principais:
 
-LRS (Locally Redundant Storage)
+- LRS (Locally Redundant Storage)
 ➡️ Dados replicados dentro do mesmo datacenter
-
 👉 Mais barato, menor proteção
 
-ZRS (Zone-Redundant Storage)
+- ZRS (Zone-Redundant Storage)
 ➡️ Replicação entre zonas diferentes da mesma região
-
 👉 Protege contra falha de datacenter
 
-GRS (Geo-Redundant Storage)
+- GRS (Geo-Redundant Storage)
 ➡️ Replicação para outra região (secundária)
-
 👉 Protege contra falha regional
 
-GZRS (Geo-Zone-Redundant Storage)
+- GZRS (Geo-Zone-Redundant Storage)
 ➡️ Combina ZRS + replicação para outra região
-
 👉 Maior nível de proteção
 
 ![Redundancia de armazenamento](image-9.png)
@@ -582,10 +578,10 @@ OBS: Quanto mais "noves" melhor
 
 ⚠️ Dica de prova:
 
-LRS = local
-ZRS = zonas
-GRS = outra região
-GZRS = zonas + outra região (mais seguro)
+- LRS = local
+- ZRS = zonas
+- GRS = outra região
+- GZRS = zonas + outra região (mais seguro)
 
 ---
 
@@ -593,13 +589,10 @@ GZRS = zonas + outra região (mais seguro)
 
 Dentro da Storage Account, você pode usar diferentes serviços:
 
-Blob Storage → arquivos não estruturados (imagens, vídeos, backups)
-
-File Storage → compartilhamento de arquivos (tipo rede)
-
-Queue Storage → filas de mensagens
-
-Table Storage → dados NoSQL simple
+- Blob Storage → arquivos não estruturados (imagens, vídeos, backups)
+- File Storage → compartilhamento de arquivos (tipo rede)
+- Queue Storage → filas de mensagens
+- Table Storage → dados NoSQL simple
 
 ---
 
@@ -623,9 +616,9 @@ Mesmo sendo públicos, o acesso não é aberto automaticamente:
 
 ⚠️ Dica de prova:
 
-Endpoint = URL de acesso ao storage
+- Endpoint = URL de acesso ao storage
 Cada tipo de serviço tem seu próprio endpoint
-Mesmo sendo público, não significa acesso liberado
+- Mesmo sendo público, não significa acesso liberado
 
 ---
 
@@ -662,11 +655,11 @@ O Azure Data Box é um dispositivo físico fornecido pela Microsoft para transfe
 ➡️ Dados são copiados localmente e enviados fisicamente para o Azure
 
 🚛 Como funciona
-Solicita o Data Box pelo portal Azure
-Microsoft envia o dispositivo físico
-Você copia os dados para o equipamento
-Envia de volta para a Microsoft
-Dados são carregados no Azure automaticamente
+- Solicita o Data Box pelo portal Azure
+- Microsoft envia o dispositivo físico
+- Você copia os dados para o equipamento
+- Envia de volta para a Microsoft
+- Dados são carregados no Azure automaticamente
 
 🔒 Segurança
 
@@ -675,13 +668,13 @@ Dados são carregados no Azure automaticamente
 ➡️ Dispositivo robusto contra danos físicos
 
 🎯 Quando usar
-Migração inicial de grandes volumes
-Backup de recuperação de desastre (DR)
-Ambientes sem boa conectividade
+- Migração inicial de grandes volumes
+- Backup de recuperação de desastre (DR)
+- Ambientes sem boa conectividade
 Locais remotos
 
 ⚠️ Dica de prova:
 
-Data Box = transferência física (offline)
-Usado quando internet não é suficiente
-Muito comum em cenários de migração inicial
+- Data Box = transferência física (offline)
+- Usado quando internet não é suficiente
+- Muito comum em cenários de migração inicial
