@@ -530,24 +530,25 @@ Exemplos de uso:
 
 O Azure oferece serviços de armazenamento para guardar dados de forma segura, escalável e altamente disponível.
 
-➡️ Pode armazenar arquivos, imagens, vídeos, backups, bancos de dados e logs
-➡️ Acesso via internet de qualquer lugar do mundo
-➡️ Alta durabilidade e redundância dos dados
+➡️ Pode armazenar arquivos, imagens, vídeos, backups, bancos de dados e logs  
+➡️ Acesso via internet de qualquer lugar do mundo  
+➡️ Alta durabilidade e redundância dos dados  
 
 ---
 
 **📦 Contas de Armazenamento (Storage Accounts)**
+
 A conta de armazenamento é o ponto central para utilizar os serviços de storage no Azure.
 
-➡️ Deve ter um nome globalmente único
-➡️ Permite acesso via internet (HTTP/HTTPS)
-➡️ Define quais serviços serão utilizados (Blob, Files, Queue, Table)
-➡️ Define o tipo de redundância dos dados
+➡️ Deve ter um nome globalmente único  
+➡️ Permite acesso via internet (HTTP/HTTPS)  
+➡️ Define quais serviços serão utilizados (Blob, Files, Queue, Table)  
+➡️ Define o tipo de redundância dos dados  
 
 ⚠️ Dica de prova:
 
-Storage Account = “container principal” do armazenamento
-👉 Tudo começa por ela
+Storage Account = “container principal” do armazenamento  
+👉 Tudo começa por ela  
 
 ---
 
@@ -557,31 +558,32 @@ O Azure replica seus dados automaticamente para garantir alta disponibilidade.
 
 Tipos principais:
 
-- LRS (Locally Redundant Storage)
-➡️ Dados replicados dentro do mesmo datacenter
-👉 Mais barato, menor proteção
+- LRS (Locally Redundant Storage)  
+➡️ Dados replicados dentro do mesmo datacenter  
+👉 Mais barato, menor proteção  
 
-- ZRS (Zone-Redundant Storage)
-➡️ Replicação entre zonas diferentes da mesma região
-👉 Protege contra falha de datacenter
+- ZRS (Zone-Redundant Storage)  
+➡️ Replicação entre zonas diferentes da mesma região  
+👉 Protege contra falha de datacenter  
 
-- GRS (Geo-Redundant Storage)
-➡️ Replicação para outra região (secundária)
-👉 Protege contra falha regional
+- GRS (Geo-Redundant Storage)  
+➡️ Replicação para outra região (secundária)  
+👉 Protege contra falha regional  
 
-- GZRS (Geo-Zone-Redundant Storage)
-➡️ Combina ZRS + replicação para outra região
-👉 Maior nível de proteção
+- GZRS (Geo-Zone-Redundant Storage)  
+➡️ Combina ZRS + replicação para outra região  
+👉 Maior nível de proteção  
 
 ![Redundancia de armazenamento](image-9.png)
-OBS: Quanto mais "noves" melhor 
+
+OBS: Quanto mais "noves" melhor  
 
 ⚠️ Dica de prova:
 
-- LRS = local
-- ZRS = zonas
-- GRS = outra região
-- GZRS = zonas + outra região (mais seguro)
+- LRS = local  
+- ZRS = zonas  
+- GRS = outra região  
+- GZRS = zonas + outra região (mais seguro)  
 
 ---
 
@@ -589,10 +591,10 @@ OBS: Quanto mais "noves" melhor
 
 Dentro da Storage Account, você pode usar diferentes serviços:
 
-- Blob Storage → arquivos não estruturados (imagens, vídeos, backups)
-- File Storage → compartilhamento de arquivos (tipo rede)
-- Queue Storage → filas de mensagens
-- Table Storage → dados NoSQL simple
+- Blob Storage → arquivos não estruturados (imagens, vídeos, backups)  
+- File Storage → compartilhamento de arquivos (tipo rede)  
+- Queue Storage → filas de mensagens  
+- Table Storage → dados NoSQL simple  
 
 ---
 
@@ -600,9 +602,9 @@ Dentro da Storage Account, você pode usar diferentes serviços:
 
 Os serviços de armazenamento do Azure são acessados por meio de URLs públicas, chamadas de pontos de extremidade.
 
-➡️ Permitem acesso via internet aos dados
-➡️ Utilizam HTTP ou HTTPS
-➡️ São gerados automaticamente ao criar a Storage Account
+➡️ Permitem acesso via internet aos dados  
+➡️ Utilizam HTTP ou HTTPS  
+➡️ São gerados automaticamente ao criar a Storage Account  
 
 ![Pontos de extremidade públicos](image-10.png)
 
@@ -610,15 +612,15 @@ Os serviços de armazenamento do Azure são acessados por meio de URLs públicas
 
 Mesmo sendo públicos, o acesso não é aberto automaticamente:
 
-➡️ Pode exigir chave de acesso ou SAS (Shared Access Signature)
-➡️ Pode ser restrito por firewall
-➡️ Pode usar redes privadas (Private Endpoint) para maior segurança
+➡️ Pode exigir chave de acesso ou SAS (Shared Access Signature)  
+➡️ Pode ser restrito por firewall  
+➡️ Pode usar redes privadas (Private Endpoint) para maior segurança  
 
 ⚠️ Dica de prova:
 
-- Endpoint = URL de acesso ao storage
-Cada tipo de serviço tem seu próprio endpoint
-- Mesmo sendo público, não significa acesso liberado
+- Endpoint = URL de acesso ao storage  
+- Cada tipo de serviço tem seu próprio endpoint  
+- Mesmo sendo público, não significa acesso liberado  
 
 ---
 
@@ -626,13 +628,13 @@ Cada tipo de serviço tem seu próprio endpoint
 
 As camadas de acesso no Azure Storage definem com que frequência os dados são acessados e ajudam a otimizar custos.
 
-➡️ Quanto mais acesso → mais caro o armazenamento, mais barato o acesso
-➡️ Quanto menos acesso → mais barato o armazenamento, mais caro o acesso
+➡️ Quanto mais acesso → mais caro o armazenamento, mais barato o acesso  
+➡️ Quanto menos acesso → mais barato o armazenamento, mais caro o acesso  
 
-🔥 Frequente (Hot)
-🌤️ Esporádico (Cool)
-❄️ Frio (Cold) 
-🧊 Arquivo Morto (Archive) ⚠️(não é acesso imediato)
+🔥 Frequente (Hot)  
+🌤️ Esporádico (Cool)  
+❄️ Frio (Cold)  
+🧊 Arquivo Morto (Archive) ⚠️ (não é acesso imediato)  
 
 ![Camadas de acessos](image-11.png)
 
@@ -642,39 +644,41 @@ As camadas de acesso no Azure Storage definem com que frequência os dados são 
 
 A migração de dados para o Azure pode ser feita de diferentes formas, dependendo do volume de dados e da conectividade disponível.
 
-➡️ Via internet (upload)
-➡️ Via ferramentas de migração
-➡️ Via transferência física
+➡️ Via internet (upload)  
+➡️ Via ferramentas de migração  
+➡️ Via transferência física  
 
 📦 Azure Data Box (Transferência Física)
 
 O Azure Data Box é um dispositivo físico fornecido pela Microsoft para transferir grandes volumes de dados para o Azure.
 
-➡️ Capacidade de até 80 TB de dados
-➡️ Ideal para grandes volumes onde a internet é limitada ou lenta
-➡️ Dados são copiados localmente e enviados fisicamente para o Azure
+➡️ Capacidade de até 80 TB de dados  
+➡️ Ideal para grandes volumes onde a internet é limitada ou lenta  
+➡️ Dados são copiados localmente e enviados fisicamente para o Azure  
 
 🚛 Como funciona
-- Solicita o Data Box pelo portal Azure
-- Microsoft envia o dispositivo físico
-- Você copia os dados para o equipamento
-- Envia de volta para a Microsoft
-- Dados são carregados no Azure automaticamente
+
+- Solicita o Data Box pelo portal Azure  
+- Microsoft envia o dispositivo físico  
+- Você copia os dados para o equipamento  
+- Envia de volta para a Microsoft  
+- Dados são carregados no Azure automaticamente  
 
 🔒 Segurança
 
-➡️ Dados protegidos durante o transporte
-➡️ Criptografia integrada
-➡️ Dispositivo robusto contra danos físicos
+➡️ Dados protegidos durante o transporte  
+➡️ Criptografia integrada  
+➡️ Dispositivo robusto contra danos físicos  
 
 🎯 Quando usar
-- Migração inicial de grandes volumes
-- Backup de recuperação de desastre (DR)
-- Ambientes sem boa conectividade
-Locais remotos
+
+- Migração inicial de grandes volumes  
+- Backup de recuperação de desastre (DR)  
+- Ambientes sem boa conectividade  
+- Locais remotos  
 
 ⚠️ Dica de prova:
 
-- Data Box = transferência física (offline)
-- Usado quando internet não é suficiente
+- Data Box = transferência física (offline)  
+- Usado quando internet não é suficiente  
 - Muito comum em cenários de migração inicial
