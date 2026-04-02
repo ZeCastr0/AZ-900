@@ -559,18 +559,22 @@ Tipos principais:
 
 LRS (Locally Redundant Storage)
 ➡️ Dados replicados dentro do mesmo datacenter
+
 👉 Mais barato, menor proteção
 
 ZRS (Zone-Redundant Storage)
 ➡️ Replicação entre zonas diferentes da mesma região
+
 👉 Protege contra falha de datacenter
 
 GRS (Geo-Redundant Storage)
 ➡️ Replicação para outra região (secundária)
+
 👉 Protege contra falha regional
 
 GZRS (Geo-Zone-Redundant Storage)
 ➡️ Combina ZRS + replicação para outra região
+
 👉 Maior nível de proteção
 
 ![Redundancia de armazenamento](image-9.png)
@@ -590,8 +594,11 @@ GZRS = zonas + outra região (mais seguro)
 Dentro da Storage Account, você pode usar diferentes serviços:
 
 Blob Storage → arquivos não estruturados (imagens, vídeos, backups)
+
 File Storage → compartilhamento de arquivos (tipo rede)
+
 Queue Storage → filas de mensagens
+
 Table Storage → dados NoSQL simple
 
 ---
