@@ -682,3 +682,30 @@ O Azure Data Box é um dispositivo físico fornecido pela Microsoft para transfe
 - Data Box = transferência física (offline)  
 - Usado quando internet não é suficiente  
 - Muito comum em cenários de migração inicial
+
+---
+
+**📂 Opções de gerenciamento de arquivos**
+
+1) azcopy
+
+- Utilitário de linha de comando  
+- Copia blogs ou arquivos de ou para sua conta de armazenamento  
+- Sincronização em uma direção  
+
+2) Gerenciamento de armazenamento do azure
+
+- Interface gráfica (semelhante ao win explore)  
+- Compatível com Win, Mac, Linux  
+- Basicamente é uma interface para o azcopy  
+3) sincronização de arquivos do azure
+
+- Sincroniza os arquivos do azure e locais (on promise) de forma bilateral  
+- A camada de nuvem mantém os arquivos acessados frequêntimente no local, e os poucos acessos libera espaço  
+
+
+⚠️ Dica de prova:
+
+- AzCopy = linha de comando  
+- Storage Explorer = interface gráfica  
+- Azure File Sync = sincronização bidirecional (nuvem + local)
